@@ -20,10 +20,10 @@ function Main() {
     }
 
     // Get string to insert
-    var the_dialog = app.dialogs.add({name:"Add to empty selected cell"});
+    var the_dialog = app.dialogs.add({name:"Add to empty selected cells"});
     with(the_dialog.dialogColumns.add()){
         with(dialogRows.add()){
-            staticTexts.add({staticLabel:"Add:"});
+            staticTexts.add({staticLabel:"Input string to add to selected cells:"});
         }
         with(borderPanels.add()){
             var addText = textEditboxes.add({minWidth: 120});
